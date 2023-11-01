@@ -8,7 +8,6 @@
   
 ---
 
-
 ## Why learn to use the command line?
 
 <details>
@@ -46,14 +45,14 @@
 
 ## Few terminologies:
 
-`Command line` or the `Terminal` is the interface in a machine that allows you to enter commands and get output. `Command line` is mostly used in Windows OS where they call their version of `Terminal` the `command line` or `CMD`. Whereas `Terminal` is the command line interface that is built in Mac OS. Another term we frequently encounter in the command line is the `shell`. It is basically the program behind the command line or command line interface which reads the input and displays the output. Different shells have different capabilities and different ways of entering commands, so you can sort of think of the shell as the operating system of the terminal. Bash is the most common shell program and is usually the default on most Linux and Unix systems and was the default on Mac for a long time, up until recently they switched from bash to `zsh`.
+`Command line` or the `Terminal` is the interface in a machine that allows you to enter commands and get output. `Command line` is mostly used in Windows OS where they call their version of `Terminal` the `command line` or `CMD`. Whereas `Terminal` is the command line interface that is built in Mac OS. 
+`Shell` is basically the program behind the command line interface which reads the input and displays the output. So it is called `interpreter`. `Bash` is the most common shell program and is usually the default on most Unix/Linux systems and was the default on Mac for a long time, up until recently they switched from `bash` to `zsh`.
 
 ---
 
 ## How to access the shell
 
-On a Mac or Linux machine, you can access a shell through "Terminal", which is already available
-on your computer. If you're using Windows, you'll need to download a separate program to access the shell, like `gitbash`. 
+On a Mac or Linux machine, you can access a shell through "Terminal", which is already available on your computer. If you're using Windows, you'll need to download a separate program to access the shell, like `Git Bash`. 
 
 ---
 
@@ -73,7 +72,7 @@ Before we look at some common commands, I just want to note a few keyboard comma
 
 ## Manual Command
 
-On Linux and Mac, the `man` command is used to show the **manual** of any command that you can run in the terminal. So if you wanted to know more about the `ls` command, you could run:
+On Linux and Mac, the `man` command is used to show the **manual** of any command that you can run in the terminal. So if you want to know more about the `ls` command, you could run:
 
 ```bash
   man ls
@@ -97,7 +96,7 @@ The `whoami` command will show you the current user that you are logged in as.
 
 ## The `date` Command
 
-Another really simple one is the `date` command, which, surprise, will show you the current date and time.
+Another really simple one is the `date` command, which, will show you the current date and time.
 
 ```bash
   date
@@ -123,19 +122,6 @@ Commands to navigate your file system are very important. You will be using them
 
 Of course, you can group flags together. For example, if I want to see more info and view hidden files, I could do `ls -l -a` and even shorten it to `ls -la`.
 
-## Opening a Folder or File
-
-If you want to open a file or a folder in the GUI from your terminal, the command is different depending on the OS.
-
-Mac - `open [dirname]`
-Windows - `start [dirname]`
-Linux - `xdg-open [dirname]`
-
-You can open folders, files and even URLs
-
-```bash
-  open https://traversymedia.com
-```
 
 ## Modifying Files & Directories
 
