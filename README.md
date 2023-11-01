@@ -1,3 +1,4 @@
+Crash Course on Introduction to Command Line
 ## Objectives
 
 - Describe key reasons for learning the command line.
