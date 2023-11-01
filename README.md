@@ -439,3 +439,25 @@ You can also append to a file:
 ```bash
   echo "Hello World" >> [filename]
 ```
+---
+
+## The `history` Command
+
+Used to display the history of commands that you have run.
+
+```bash
+  history
+```
+
+You can also use the `!` to run a command from the history.
+
+```bash
+  !100
+```
+
+This will run the command that is in the 100th position in the history.
+
+
+
+
+
