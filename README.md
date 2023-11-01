@@ -73,13 +73,13 @@ Before we look at some common commands, I just want to note a few keyboard comma
 On Linux and Mac, the `man` command is used to show the **manual** of any command that you can run in the terminal. So if you want to know more about the `ls` command, you could run:
 
 ```bash
-  man ls
+man ls
 ```
 
 If you are on Windows and using **Git Bash**, the `man` command is not included, however, you can just type the command that you want to know more about and then `--help` and you will get similar info:
 
 ```bash
-  ls --help
+ls --help
 ```
 
 You should be able to use the arrow keys or page up and down. When you are ready to exit, just press `q`.
@@ -91,7 +91,7 @@ You should be able to use the arrow keys or page up and down. When you are ready
 The `whoami` command will show you the current user that you are logged in as.
 
 ```bash
-  whoami
+whoami
 ```
 ---
 
@@ -100,11 +100,17 @@ The `whoami` command will show you the current user that you are logged in as.
 Another really simple one is the `date` command, which, will show you the current date and time.
 
 ```bash
-  date
+date
 ```
 ---
 
 ## File System Navigation
+
+Setup:
+```
+cd
+mkdir -p Desktop/dir_1/dir_2/dir_3
+```
 
 Commands to navigate your file system are very important. You will be using them all the time. Below are some of the navigation commands that are used very frequently.
 
@@ -169,8 +175,8 @@ hierarchy. Navigate to the home directory, then enter the `pwd`
 command.
 
 ```bash
-$ cd  
-$ pwd  
+cd  
+pwd  
 ```
 
 You will see:
@@ -186,48 +192,9 @@ very top of the hierarchy is a directory called `/` which is usually
 referred to as the *root directory*. So, to summarize: the home folder for your user is a
 directory in `home` which is a directory in `/`.
 
-
 ---
 
-## Modifying Files & Directories
-
-| Command                     | Description                                         |
-| --------------------------- | --------------------------------------------------- |
-| mkdir [dirname]             | Make directory                                      |
-| touch [filename]            | Create file                                         |
-| rm [filename]               | Remove file                                         |
-| rm -i [filename]            | Remove file, but ask before                    |
-| rm -r [dirname]             | Remove directory                                    |
-| rm -rf [dirname]            | Remove directory with contents                      |
-| rm ./\*                     | Remove everything in the current folder             |
-| cp [filename] [dirname]     | Copy file                                           |
-| mv [filename] [dirname]     | Move file                                           |
-| mv [dirname] [dirname]      | Move directory                                      |
-| mv [filename] [filename]    | Rename file or folder                               |
-
-
-We can also do multiple commands at once with the `&&` operator:
-
-```bash
-cd test2 && mkdir test3
-```
----
-Now let's try to understand the absolute and relative path a bit more.
-
-Setting up: enter the following commands:
-
-```bash
-cd 
-cd Desktop && mkdir dir_1 && cd dir_1 && cd dir_2 && cd dir_3 && cd 
-```
-
-or you can type:
-
-```bash
-cd
-mkdir -p Desktop/dir_1/dir_2/dir_3
-```
-Now to navigate to the `dir_3` directory that you just created you can either enter:
+To navigate to the `dir_3` directory that you just created before:
 
 ```bash
 cd /Users/<your_user_name>/Desktop/dir_1/dir_2/dir_3/
@@ -280,87 +247,47 @@ what will `ls ../backup` display?
 
 </details>
 
-
-
-
-
-
 ---
 
-## The `cat` (concatenate) Command
+## Modifying Files & Directories
 
-The cat command is a very common command and allows you to create single or multiple files, view content of a file, concatenate files and redirect output in terminal or files.
+| Command                     | Description                                         |
+| --------------------------- | --------------------------------------------------- |
+| mkdir [dirname]             | Make directory                                      |
+| touch [filename]            | Create file                                         |
+| rm [filename]               | Remove file                                         |
+| rm -i [filename]            | Remove file, but ask before                    |
+| rm -r [dirname]             | Remove directory                                    |
+| rm -rf [dirname]            | Remove directory with contents                      |
+| rm ./\*                     | Remove everything in the current folder             |
+| cp [filename] [dirname]     | Copy file                                           |
+| mv [filename] [dirname]     | Move file                                           |
+| mv [dirname] [dirname]      | Move directory                                      |
+| mv [filename] [filename]    | Rename file or folder                               |
 
-The most common thing I use it for is to display the contents of a file:
 
-```bash
-  cat [filename]
-```
-
-You can also view the contents of multiple files:
-
-```bash
-  cat [filename] [filename]
-```
-
-You can also create a file using the `cat` command:
-
-```bash
-  cat > [filename]
-```
-
-This will open up a new file and you can start typing. When you are done, you can press `Ctrl + D` to save and exit.
-
-You can also append to a file:
+We can also do multiple commands at once with the `&&` operator:
 
 ```bash
-  cat >> [filename]
+cd test2 && mkdir test3
 ```
-
-This will open up the file and you can start typing. When you are done, you can press `Ctrl + D` to save and exit.
-
-You can use it to show line numbers:
-
-```bash
-  cat -n [filename]
-```
-
-There are other uses as well, but as you can see, the `cat` command is very powerful.
 
 ---
-
-## The `less` Command
-
-The `less` command is used to view the contents of a file. It is similar to the `cat` command, but it allows you to scroll up and down.
-
-```bash
-  less [filename]
+## The `touch` Command
+You can create files using touch command
+```
+touch file-1.txt
 ```
 
-To exit the `less` command, just press `q`.
+you can also create multiple files.
 
----
-
-## The `echo` Command
-
-The `echo` command is used to display messages, or to create and write to files. It is similar to the `cat` command, but it is used to display a single line of text.
 
 ```bash
-  echo "Hello World"
+  touch file-{001..100}.txt
 ```
 
-You can also use it to create a file:
+Now we have 100 .txt files in the current directory. Something that would have taken a lot longer to do in the GUI.
 
-```bash
-  echo "Hello World" > [filename]
-```
-
-You can also append to a file:
-
-```bash
-  echo "Hello World" >> [filename]
-```
----
 
 ## The `nano` Command
 
@@ -379,6 +306,12 @@ When you're ready to exit, just hit `Ctrl + X` and then `Y` to save and `N` to n
 ## The `head` and `tail` Commands
 
 The `head` command is used to output the first part of files. By default, it outputs the first 10 lines of each file. You can also specify the number of lines to output.
+
+Setup:
+```
+seq 100 200 > test.txt
+```
+Seq command is used to generate numbers from FIRST to LAST in steps of INCREMENT. It is a very useful command where we have to generate a list of numbers.
 
 ```bash
   head [filename]
@@ -404,6 +337,83 @@ You can also specify the number of lines to output:
 
 ---
 
+## The `cat` (concatenate) Command
+
+The cat command is a very common command and allows you to create single or multiple files, view content of a file, concatenate files and redirect output in terminal or files.
+
+The most common thing cat is used for is to display the contents of a file:
+
+```bash
+cat [filename]
+```
+You can also create a file using the `cat` command:
+
+```bash
+cat > [filename]
+```
+
+This will open up a new file and you can start typing. When you are done, you can press `Ctrl + D` to save and exit.
+
+You can also view the contents of multiple files:
+
+```bash
+cat [filename] [filename]
+```
+
+You can also append to a file:
+
+```bash
+cat >> [filename]
+```
+
+This will open up the file and you can start typing. When you are done, you can press `Ctrl + D` to save and exit.
+
+You can use it to show line numbers:
+
+```bash
+cat -n [filename]
+```
+
+There are other uses of cat command, you can check its manual for more details.
+
+---
+
+## The `less` Command
+
+The `less` command is used to view the contents of a file. It is similar to the `cat` command, but it allows you to scroll up and down.
+
+```bash
+less [filename]
+```
+
+To exit the `less` command, just press `q`.
+
+---
+
+## The `echo` Command
+
+The `echo` command is used to display messages, or to create and write to files. It is similar to the `cat` command, but it is used to display a single line of text.
+
+```bash
+  echo "Hello World"
+```
+
+You can also use it to create a file:
+
+```bash
+  echo "Hello World" > [filename]
+```
+
+You can also append to a file:
+
+```bash
+  echo "Hello World" >> [filename]
+```
+
+---
+
+
+
 ## The `grep` Command
 
 The `grep` command is used to search for a text pattern in a file. It is very powerful and can be used to search for a string or regular expression in a file or set of files.
@@ -418,7 +428,7 @@ You can also search for a string in multiple files:
   grep [searchterm] [filename] [filename]
 ```
 
-There are a lot more things that you can do with the `grep` command, but it's a but more advanced.
+There is so much more that you can do with the `grep` command, but it goes beyond the scope of this tutorial.
 ---
 
 
@@ -495,42 +505,3 @@ There is so much more that you can do with the `find` command, but it goes beyon
 
 ---
 
-## Piping
-Piping is very powerful. It is a way of redirecting standard output to another destination, such as another file. Let's actually use the find command to find a list of files and then pipe them into a new file.
-
-First, we'll create 10 files:
-
-```bash
-touch file-{001..010}.txt
-```
-
-Now, let's pipe the result from our find into a new file named `output.txt`
-
-```bash
-find . -name "file-0*" > output.txt
-```
-
-You can see the results now in the new file:
-
-```bash
-cat output.txt
-```
-
----
-
-
-## The `history` Command
-
-Used to display the history of commands that you have run.
-
-```bash
-  history
-```
-
-You can also use the `!` to run a command from the history.
-
-```bash
-  !100
-```
-
-This will run the command that is in the 100th position in the history.
