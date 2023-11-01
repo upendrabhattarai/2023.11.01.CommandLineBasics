@@ -44,19 +44,32 @@
 
 ---
 
-
-## How to access the shell
-
-On a Mac or Linux machine, you can access a shell through a program called "Terminal", which is already available
-on your computer. The Terminal is a window into which we will type commands. If you're using Windows,
-you'll need to download a separate program to access the shell, like `gitbash`. 
-
----
-
-
 ## Few terminologies:
 
 `Command line` or the `Terminal` is the interface in a machine that allows you to enter commands and get output. `Command line` is mostly used in Windows OS where they call their version of `Terminal` the `command line` or `CMD`. Whereas `Terminal` is the command line interface that is built in Mac OS. Another term we frequently encounter in the command line is the `shell`. It is basically the program behind the command line or command line interface which reads the input and displays the output. Different shells have different capabilities and different ways of entering commands, so you can sort of think of the shell as the operating system of the terminal. Bash is the most common shell program and is usually the default on most Linux and Unix systems and was the default on Mac for a long time, up until recently they switched from bash to `zsh`.
+
+---
+
+## How to access the shell
+
+On a Mac or Linux machine, you can access a shell through "Terminal", which is already available
+on your computer. If you're using Windows, you'll need to download a separate program to access the shell, like `gitbash`. 
+
+---
+
+## Key Commands & Navigation
+
+Before we look at some common commands, I just want to note a few keyboard commands that are very helpful:
+
+- `Up Arrow`: Will show your last command
+- `Down Arrow`: Will show your next command
+- `Tab`: Will auto-complete your command
+- `Ctrl + L`: Will clear the screen
+- `Ctrl + C`: Will cancel a command
+- `Ctrl + R`: Will search for a command
+- `Ctrl + D`: Will exit the terminal
+
+
 
 ---
 
