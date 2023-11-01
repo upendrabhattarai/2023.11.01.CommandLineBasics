@@ -1,9 +1,9 @@
-# Crash Course on Introduction to Command Line
+# Crash Course in Command Line Basics
+
 ## Objectives
 
-- Describe key reasons for learning the command line.
-- Discuss common confusion about the Command line, Terminal, and shell.
-- Navigate your file system using the command line.
+- Explain the importance of learning the command line.
+- Navigate the file system using the command line.
 - Learn the basics of working with files and folders.
   
 ---
@@ -13,23 +13,22 @@
 <details>
   <summary> Greater control</summary>
 
-    The Graphical user interface (GUI) of an operating system (OS) does make everything look nice, easy, and pretty, however, using the command line is sort of having back-end access to the system. So you can do things that you can't typically do with the GUI. For example, if you are having trouble with your computer, the command line can be a lifesaver to check error logs and run diagnostic tools. You can manage permissions and user access through the command line and perform complex tasks where the command line can be the only way to do it.
-
+While the Graphical user interface (GUI) of an operating system (OS) offers a user-friendly and visually appealing experience, the command line provides a way to access the system's backend. This grants you the ability to perform tasks that may not be readily achievable through the GUI. For instance, when encountering computer issues, the command line can be a valuable tool for checking error logs and running diagnostic tools. It also allows you to manage permissions, and user access, and execute complex tasks that might only be possible via the command line.
 
 </details>
 
 <details>
   <summary> Speed and Efficiency</summary>
   
-    Though one of the biggest drawbacks of the command line is its steep learning curve, however, learning to navigate your system through the command line allows you to do things easily and quickly. For example, if you have hundreds or thousands of files to process through a pipeline, it might take hours or even days to manually handle them one by one through GUI, instead, you can automate such repetitive tasks with the command line. The command line makes work less error-prone. you can also alias commonly used command to make it even faster. You don't have to go back and forth between mouse and keyboard. So working with the command line can be much more efficient in many ways.
+Despite its steep learning curve, the command line offers efficient and quick ways to navigate your system. For example, when dealing with hundreds or thousands of files that require processing through a pipeline, manually handling them through a GUI could take hours or even days. In contrast, the command line allows you to automate these repetitive tasks, reducing the likelihood of errors. You can also create aliases for frequently used commands to enhance speed and efficiency. This eliminates the need to switch back and forth between the mouse and keyboard, making command line work significantly more efficient in many respects.
 
 </details>
 
 
 <details>
   <summary> Access remote servers</summary>
-  
-    If you are working with big data like High throughput sequencing data, a lot of times you will need to access high-performance computing clusters for bigger computing power, because your PC won't be able to process those millions of sequencing reads you have. In such case, you need to access remote servers and you can do that with the command line interface.
+
+When working with large datasets, such as high-throughput sequencing data, there are instances where your local PC may not have the processing capacity to handle the millions of sequencing reads effectively. In such situations, you often need to access high-performance computing clusters for enhanced computing power. This can be achieved through the command-line interface, allowing you to connect to remote servers and leverage their computational resources.
     
 </details>
 
@@ -37,7 +36,7 @@
 <details>
   <summary> Command line tools</summary>
   
-    There are so many tools especially when it comes to dealing with omics data you simply don't have any GUI options. To install and use those tools you must go through the command line interface. Some tools have more features and parameter options that are not available in their GUI version. eg. BLAST, for which many of the advanced functions are only accessible through the command line.
+There are so many tools especially when it comes to dealing with omics data you simply don't have any GUI options. To install and use these tools, you must rely on the command line interface. In many cases, the command line versions offer additional features and parameter options that are not present in their GUI versions. For example, BLAST provides advanced functions that can only be accessed through the command line.
 
 </details>
 
@@ -45,8 +44,8 @@
 
 ## Few terminologies:
 
-`Command line` or the `Terminal` is the interface in a machine that allows you to enter commands and get output. `Command line` is mostly used in Windows OS where they call their version of `Terminal` the `command line` or `CMD`. Whereas `Terminal` is the command line interface that is built in Mac OS. 
-`Shell` is basically the program behind the command line interface which reads the input and displays the output. So it is called `interpreter`. `Bash` is the most common shell program and is usually the default on most Unix/Linux systems and was the default on Mac for a long time, up until recently they switched from `bash` to `zsh`.
+**Command line** or the **Terminal** is the interface in a computer system that allows you to enter commands and receive output. **Command line** is predominantly used in Windows OS, where their version of the **Terminal** is known as the **Command line** or **CMD**. In contrast, **Terminal** is the default command line interface for Mac and Unix-based OS. 
+The **Shell** is essentially the program that operates behind the command line interface, interpreting user input and displaying output. Commonly referred to as an **interpreter**. **Bash is one of the most widely used shell programs and is typically the default on many Unix/Linux systems. Notably, it was the default shell on Mac for an extended period, but more recently, they transitioned from **Bash** to **Zsh**.
 
 ---
 
@@ -78,7 +77,7 @@ On Linux and Mac, the `man` command is used to show the **manual** of any comman
   man ls
 ```
 
-Unfortunately, if you are on Windows and using Git Bash, the `man` command is not included, however, you can just type the command that you want to know more about and then `--help` and you will get similar info:
+If you are on Windows and using **Git Bash**, the `man` command is not included, however, you can just type the command that you want to know more about and then `--help` and you will get similar info:
 
 ```bash
   ls --help
