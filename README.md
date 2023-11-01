@@ -312,7 +312,7 @@ you can also create multiple files.
 
 
 ```bash
-  touch file-{001..100}.txt
+touch file-{001..100}.txt
 ```
 
 Now we have 100 .txt files in the current directory. Something that would have taken a lot longer to do in the GUI.
@@ -325,7 +325,7 @@ The `nano` command is a text editor that is installed by default on most Linux d
 You can open an existing file to edit or create a new file and open it with:
 
 ```bash
-  nano [filename]
+nano [filename]
 ```
 
 When you're ready to exit, just hit `Ctrl + X` and then `Y` to save and `N` to not save.
@@ -344,25 +344,25 @@ seq 100 200 > test.txt
 Seq command is used to generate numbers from FIRST to LAST in steps of INCREMENT. It is a very useful command where we have to generate a list of numbers.
 
 ```bash
-  head [filename]
+head [filename]
 ```
 
 You can also specify the number of lines to output:
 
 ```bash
-  head -n 5 [filename]
+head -n 5 [filename]
 ```
 
 The `tail` command is used to output the last part of files. By default, it outputs the last 10 lines of each file. You can also specify the number of lines to output.
 
 ```bash
-  tail [filename]
+tail [filename]
 ```
 
 You can also specify the number of lines to output:
 
 ```bash
-  tail -n 5 [filename]
+tail -n 5 [filename]
 ```
 
 ---
