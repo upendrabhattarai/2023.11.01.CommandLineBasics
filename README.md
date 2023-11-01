@@ -66,7 +66,6 @@ Before we look at some common commands, I just want to note a few keyboard comma
 - `Ctrl + C`: Will cancel a command
 
 
-
 ---
 
 ### Manual Command
@@ -124,9 +123,9 @@ Commands to navigate your file system are very important. You will be using them
 Of course, you can group flags together. For example, if I want to see more info and view hidden files, I could do `ls -l -a` and even shorten it to `ls -la`.
 
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+## Challenge-1: Find hidden items
 
-## Finding hidden files and directories in your home folder
+### Finding hidden files and directories in your home folder.
 
 First navigate to your `home` directory, if you are not already there. Explore the options for `ls` to
 find out how to see hidden directories. List the contents of the directory with the option to display all the hidden items there.
@@ -136,7 +135,7 @@ find out how to see hidden directories. List the contents of the directory with 
   
 Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.
   
-You can open the manual page or help page for the `ls` command and search inside using a keyword `dot`. You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
+You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
   
 </details>
 
