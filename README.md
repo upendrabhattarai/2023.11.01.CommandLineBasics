@@ -133,7 +133,7 @@ Of course, you can group flags together. For example, if I want to see more info
 | mkdir [dirname]             | Make directory                                      |
 | touch [filename]            | Create file                                         |
 | rm [filename]               | Remove file                                         |
-| rm -i [filename]            | Remove directory, but ask before                    |
+| rm -i [filename]            | Remove file, but ask before                    |
 | rm -r [dirname]             | Remove directory                                    |
 | rm -rf [dirname]            | Remove directory with contents                      |
 | rm ./\*                     | Remove everything in the current folder             |
@@ -141,7 +141,7 @@ Of course, you can group flags together. For example, if I want to see more info
 | mv [filename] [dirname]     | Move file                                           |
 | mv [dirname] [dirname]      | Move directory                                      |
 | mv [filename] [filename]    | Rename file or folder                               |
-| mv [filename] [filename] -v | Rename Verbose - print source/destination directory |
+
 
 We can also do multiple commands at once with the `&&` operator:
 
