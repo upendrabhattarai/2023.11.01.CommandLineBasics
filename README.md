@@ -113,7 +113,6 @@ Commands to navigate your file system are very important. You will be using them
 | ----------------------------------- | --------------------------------------------------------------------------------- |
 | pwd                                 | Lists the path to the working directory                                           |
 | ls                                  | List directory contents                                                           |
-| ls -a                               | List contents including hidden files (Files that begin with a dot)                |
 | ls -l                               | List contents with more info including permissions (long listing)                 |
 | ls -r                               | List contents reverse order                                                       |
 | cd                                  | Change directory to home                                                          |
@@ -123,6 +122,42 @@ Commands to navigate your file system are very important. You will be using them
 | cd -                                | Change to previous directory (which could be different than the parent of course) |
 
 Of course, you can group flags together. For example, if I want to see more info and view hidden files, I could do `ls -l -a` and even shorten it to `ls -la`.
+
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Finding hidden files and directories in your home folder
+
+First navigate to your `home` directory, if you are not already there. Explore the options for `ls` to
+find out how to see hidden directories. List the contents of the directory with the option to display all the hidden items there.
+
+<details>
+  <summary>::::::::::::::: Hint</summary>
+  
+Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.
+  
+You can open the manual page or help page for the `ls` command and search inside using a keyword `dot`. You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
+  
+</details>
+
+<details>
+  <summary>::::::::::::::: solution</summary>
+
+First use the `man` command to look at the options for `ls`.
+
+```bash
+$ man ls
+```
+The `-a` option is short for `all` and says that it causes `ls` to "not ignore
+entries starting with ." This is the option we want.
+
+```bash
+$ ls -a
+```
+You will see all the files and folders those were hidden and starts with `.`
+
+</details>
+
 
 ---
 
@@ -150,15 +185,6 @@ cd test2 && mkdir test3
 ```
 ---
 
-## Right angle bracket >
-
-This symbol tells the system to output results into whatever you specify next. The target is usually a filename. You can use this symbol by itself to create a new file:
-
-```bash
-> [filename]
-```
-
-When you are done, hit `ctrl+D`
 
 ---
 
