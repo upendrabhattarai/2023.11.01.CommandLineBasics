@@ -150,10 +150,10 @@ find out how to see hidden directories. List the contents of the directory with 
   <summary>::::::::::::::: Hint</summary>
 
   
-  Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.
+  Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`. \  
   
-  
-  You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
+  You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. \
+  You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
 
 
 </details>
