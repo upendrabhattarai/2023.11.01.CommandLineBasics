@@ -157,6 +157,33 @@ You will see all the files and folders those were hidden and starts with `.`
 
 </details>
 
+## Full vs. Relative Paths
+
+The `cd` command takes an argument which is a directory
+name. Directories can be specified using either a *relative* path or a
+full *absolute* path. The directories on the computer are arranged into a
+hierarchy. The full path tells you where a directory is in that
+hierarchy. Navigate to the home directory, then enter the `pwd`
+command.
+
+```bash
+$ cd  
+$ pwd  
+```
+
+You will see:
+
+```output
+/home/your_user_name
+```
+
+This is the full name of your home directory. This tells you that you
+are in a directory called `your_user_name`, which sits inside a directory called
+`home` which sits inside the very top directory in the hierarchy. The
+very top of the hierarchy is a directory called `/` which is usually
+referred to as the *root directory*. So, to summarize: the home folder for your user is a
+directory in `home` which is a directory in `/`.
+
 
 ---
 
@@ -183,7 +210,47 @@ We can also do multiple commands at once with the `&&` operator:
 cd test2 && mkdir test3
 ```
 ---
+Now let's try to understand the absolute and relative path a bit more.
 
+Setting up: enter the following commands:
+
+```bash
+cd 
+cd Desktop && mkdir dir_1 && cd dir_1 && cd dir_2 && cd dir_3 && cd 
+```
+
+or you can type:
+
+```bash
+cd
+mkdir -p Desktop/dir_1/dir_2/dir_3
+```
+Now to navigate to the `dir_3` directory that you just created you can either enter:
+
+```bash
+cd /Users/<your_user_name>/Desktop/dir_1/dir_2/dir_3/
+```
+Or
+```bash
+cd Desktop/dir_1/dir_2/dir_3/
+```
+
+These two commands have the same effect, they both take us to the `dir_3` directory.
+The first uses the absolute path, giving the full address from the root directory. The
+second uses a relative path, giving only the address from your working directory in this case your home directory. A full
+path always starts with a `/`. A relative path does not.
+
+A relative path is like getting directions from someone on the street. They tell you to
+"go right at the stop sign, and then turn left on Main Street". That works great if
+you're standing there together, but not so well if you're trying to tell someone how to
+get there from another country. A full path is like GPS coordinates. It tells you exactly
+where something is no matter where you are right now.
+
+You can usually use either a full path or a relative path depending on what is most convenient.
+
+Over time, it will become easier for you to keep a mental note of the
+structure of the directories that you are using and how to quickly
+navigate amongst them.
 
 ---
 
