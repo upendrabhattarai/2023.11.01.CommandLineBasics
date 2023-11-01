@@ -255,9 +255,7 @@ structure of the directories that you are using and how to quickly
 navigate amongst them.
 
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Relative path resolution
+## Challenge-2: Relative path resolution
 
 Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 what will `ls ../backup` display?
@@ -281,6 +279,11 @@ what will `ls ../backup` display?
 4. Yes: `../backup` refers to `/Users/backup`.
 
 </details>
+
+
+
+
+
 
 ---
 
