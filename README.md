@@ -70,7 +70,7 @@ Before we look at some common commands, I just want to note a few keyboard comma
 
 ---
 
-## Manual Command
+### Manual Command
 
 On Linux and Mac, the `man` command is used to show the **manual** of any command that you can run in the terminal. So if you want to know more about the `ls` command, you could run:
 
@@ -86,21 +86,25 @@ Unfortunately, if you are on Windows and using Git Bash, the `man` command is no
 
 You should be able to use the arrow keys or page up and down. When you are ready to exit, just press `q`.
 
-## The `whoami` Command
+---
+
+### The `whoami` Command
 
 The `whoami` command will show you the current user that you are logged in as.
 
 ```bash
   whoami
 ```
+---
 
-## The `date` Command
+### The `date` Command
 
 Another really simple one is the `date` command, which, will show you the current date and time.
 
 ```bash
   date
 ```
+---
 
 ## File System Navigation
 
@@ -122,6 +126,7 @@ Commands to navigate your file system are very important. You will be using them
 
 Of course, you can group flags together. For example, if I want to see more info and view hidden files, I could do `ls -l -a` and even shorten it to `ls -la`.
 
+---
 
 ## Modifying Files & Directories
 
@@ -145,6 +150,7 @@ We can also do multiple commands at once with the `&&` operator:
 ```bash
 cd test2 && mkdir test3
 ```
+---
 
 ## Right angle bracket >
 
@@ -155,6 +161,8 @@ This symbol tells the system to output results into whatever you specify next. T
 ```
 
 When you are done, hit `ctrl+D`
+
+---
 
 ## The `cat` (concatenate) Command
 
@@ -196,6 +204,8 @@ You can use it to show line numbers:
 
 There are other uses as well, but as you can see, the `cat` command is very powerful.
 
+---
+
 ## The `less` Command
 
 The `less` command is used to view the contents of a file. It is similar to the `cat` command, but it allows you to scroll up and down.
@@ -205,6 +215,8 @@ The `less` command is used to view the contents of a file. It is similar to the 
 ```
 
 To exit the `less` command, just press `q`.
+
+---
 
 ## The `echo` Command
 
@@ -225,6 +237,7 @@ You can also append to a file:
 ```bash
   echo "Hello World" >> [filename]
 ```
+---
 
 ## The `nano` Command
 
@@ -237,6 +250,8 @@ You can open an existing file to edit or create a new file and open it with:
 ```
 
 When you're ready to exit, just hit `Ctrl + X` and then `Y` to save and `N` to not save.
+
+---
 
 ## The `head` and `tail` Commands
 
@@ -264,6 +279,8 @@ You can also specify the number of lines to output:
   tail -n 5 [filename]
 ```
 
+---
+
 ## The `grep` Command
 
 The `grep` command is used to search for a text pattern in a file. It is very powerful and can be used to search for a string or regular expression in a file or set of files.
@@ -279,6 +296,8 @@ You can also search for a string in multiple files:
 ```
 
 There are a lot more things that you can do with the `grep` command, but it's a but more advanced.
+---
+
 
 ## The `find` command
 
@@ -351,8 +370,10 @@ We can remove all of the files that we created with this command:
 
 There is so much more that you can do with the `find` command, but it goes beyond the scope of this tutorial.
 
+---
+
 ## Piping
-Piping is very powerful. It is a way of redirecting standard output to another destination, such as another file. Let's actually use the find command to find a list of files and then pipe them to a new file.
+Piping is very powerful. It is a way of redirecting standard output to another destination, such as another file. Let's actually use the find command to find a list of files and then pipe them into a new file.
 
 First, we'll create 10 files:
 
@@ -372,49 +393,8 @@ You can see the results now in the new file:
 cat output.txt
 ```
 
-## Creating a Symlink
+---
 
-A symlink is a special type of file that points to another file. It is a shortcut to the original file. It is useful when you want to access a file in a different location without having to copy it.
-
-We can use the `ln` command to create a symlink:
-
-```bash
-  ln -s [filename] [symlinkname]
-```
-
-You can remove a symlink with the `rm` command:
-
-```bash
-  rm [symlinkname]
-```
-
-If you're on Windows and you are not using something like Git Bash, you can use the `mklink` command:
-
-```bash
-  mklink [symlinkname] [filename]
-```
-
-## File Compression
-
-`tar` is a program for concatenating multiple files into one big file called a **tarball** and reversing this process by extracting the files from the tarball.
-
-| Command                             | Description                |
-| ----------------------------------- | -------------------------- |
-| tar czvf [dirname].tar.gz [dirname] | Create tarball             |
-| tar tzvf [dirname]                  | See what is in the tarball |
-| tar xzvf [dirname].tar.gz           | Extract tarball            |
-
-- -c : Creates Archive 
-- -x : Extract the archive 
-- -f : creates archive with given filename 
-- -t : displays or lists files in archived file 
-- -u : archives and adds to an existing archive file 
-- -v : Displays Verbose Information 
-- -A : Concatenates the archive files 
-- -z : zip, tells tar command that creates tar file using gzip 
-- -j : filter archive tar file using tbzip 
-- -W : Verify a archive file 
-- -r : update or add file or directory in already existed .tar file 
 
 ## The `history` Command
 
