@@ -58,6 +58,7 @@ The **Shell** is essentially the program that operates behind the command line i
 
 On a Mac or Linux machine, you can access a shell through "Terminal", which is already available on your computer. If you're using Windows, you'll need to download a separate program to access the shell, like `Git Bash` [Download link: Git Bash](https://gitforwindows.org/)
 
+[Installation instructions](HowToInstallGitBash.md)
 ---
 
 ## Key Commands & Navigation
