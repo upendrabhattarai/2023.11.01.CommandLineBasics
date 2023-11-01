@@ -15,6 +15,8 @@
 
 While the Graphical user interface (GUI) of an operating system (OS) offers a user-friendly and visually appealing experience, the command line provides a way to access the system's backend. This grants you the ability to perform tasks that may not be readily achievable through the GUI. For instance, when encountering computer issues, the command line can be a valuable tool for checking error logs and running diagnostic tools. It also allows you to manage permissions, and user access, and execute complex tasks that might only be possible via the command line.
 
+
+
 </details>
 
 <details>
@@ -25,6 +27,7 @@ Despite its steep learning curve, the command line offers efficient and quick wa
 </details>
 
 
+
 <details>
   <summary> Access remote servers</summary>
 
@@ -33,12 +36,14 @@ When working with large datasets, such as high-throughput sequencing data, there
 </details>
 
 
+
 <details>
   <summary> Command line tools</summary>
   
 There are so many tools especially when it comes to dealing with omics data you simply don't have any GUI options. To install and use these tools, you must rely on the command line interface. In many cases, the command line versions offer additional features and parameter options that are not present in their GUI versions. For example, BLAST provides advanced functions that can only be accessed through the command line.
 
 </details>
+
 
 ---
 
