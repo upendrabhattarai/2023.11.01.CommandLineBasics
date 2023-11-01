@@ -45,7 +45,7 @@ There are so many tools especially when it comes to dealing with omics data you 
 ## Few terminologies:
 
 **Command line** or the **Terminal** is the interface in a computer system that allows you to enter commands and receive output. **Command line** is predominantly used in Windows OS, where their version of the **Terminal** is known as the **Command line** or **CMD**. In contrast, **Terminal** is the default command line interface for Mac and Unix-based OS. 
-The **Shell** is essentially the program that operates behind the command line interface, interpreting user input and displaying output. Commonly referred to as an **interpreter**. **Bash is one of the most widely used shell programs and is typically the default on many Unix/Linux systems. Notably, it was the default shell on Mac for an extended period, but more recently, they transitioned from **Bash** to **Zsh**.
+The **Shell** is essentially the program that operates behind the command line interface, interpreting user input and displaying output. Commonly referred to as an **interpreter**. **Bash** is one of the most widely used shell programs and is typically the default on many Unix/Linux systems. Notably, it was the default shell on Mac for an extended period, but more recently, they transitioned from **Bash** to **Zsh**.
 
 ---
 
@@ -64,8 +64,8 @@ Before we look at some common commands, I just want to note a few keyboard comma
 - `Tab`: Will auto-complete your command
 - `Ctrl + L`: Will clear the screen
 - `Ctrl + C`: Will cancel a command
-- `Ctrl + R`: Will search for a command
-- `Ctrl + D`: Will exit the terminal
+
+
 
 ---
 
