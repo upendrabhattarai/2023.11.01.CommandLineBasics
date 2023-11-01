@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 title: Crash Course on Introduction to Command Line
-description: 2023-11-01
+description: Upendra Bhattarai
+              2023-11-01
 
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
