@@ -112,7 +112,8 @@ date
 ## File System Navigation
 
 Setup:
-```
+
+```bash
 cd
 mkdir -p Desktop/dir_1/dir_2/dir_3
 ```
@@ -166,7 +167,7 @@ find out how to see hidden directories. List the contents of the directory with 
   ```bash
   ls -a
   ```
-  You will see all the files and folders those were hidden and starts with `.`
+  You will see all the files and folders that were hidden and start with `.`
 
 </details>
 
@@ -279,8 +280,9 @@ cd test2 && mkdir test3
 
 ---
 ## The `touch` Command
-You can create files using touch command
-```
+You can create files using touch command.
+
+```bash
 touch file-1.txt
 ```
 
@@ -313,7 +315,8 @@ When you're ready to exit, just hit `Ctrl + X` and then `Y` to save and `N` to n
 The `head` command is used to output the first part of files. By default, it outputs the first 10 lines of each file. You can also specify the number of lines to output.
 
 Setup:
-```
+
+```bash
 seq 100 200 > test.txt
 ```
 Seq command is used to generate numbers from FIRST to LAST in steps of INCREMENT. It is a very useful command where we have to generate a list of numbers.
@@ -431,7 +434,7 @@ You can also search for a string in multiple files:
   grep [searchterm] [filename] [filename]
 ```
 
-There is so much more that you can do with the `grep` command, but it goes beyond the scope of this tutorial.
+`grep` is a powerful command and there is so much more that you can do with it.
 ---
 
 
@@ -463,7 +466,7 @@ This will look in the current directory, which is represented with a dot.
 
 We can look in other directories as well. Let's create a file in our home folder called test.txt
 
-```
+```bash
   touch ~/test.txt
 ```
 
