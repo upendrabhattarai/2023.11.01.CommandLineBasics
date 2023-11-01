@@ -107,7 +107,7 @@ Another really simple one is the `date` command, which, will show you the curren
 
 ## File System Navigation
 
-Commands to navigate your file system are very important. You will be using them all the time. You won't remember every single command that you use, but these are the ones that you should remember.
+Commands to navigate your file system are very important. You will be using them all the time. Below are some of the navigation commands that are used very frequently.
 
 | Command                             | Description                                                                       |
 | ----------------------------------- | --------------------------------------------------------------------------------- |
@@ -121,7 +121,6 @@ Commands to navigate your file system are very important. You will be using them
 | cd ~                                | Change to home directory                                                          |
 | cd ..                               | Change to parent directory                                                        |
 | cd -                                | Change to previous directory (which could be different than the parent of course) |
-| find [dirtosearch] -name [filename] | Find location of a program                                                        |
 
 Of course, you can group flags together. For example, if I want to see more info and view hidden files, I could do `ls -l -a` and even shorten it to `ls -la`.
 
