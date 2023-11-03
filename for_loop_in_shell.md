@@ -1,4 +1,0 @@
-# Recap
-## objectives
-
-##
