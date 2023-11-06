@@ -1,5 +1,3 @@
----
-
 ## The `grep` Command
 
 The `grep` command is used to search for a text pattern in a file. It is very powerful and can be used to search for a string or regular expression in a file or set of files.
