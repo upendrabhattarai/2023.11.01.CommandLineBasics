@@ -288,7 +288,7 @@ what will `ls ../backup` display?
 </details>
 
 ---
-# Working with files and folders
+# Working_with_files_and_folders
 
 ---
 
@@ -394,7 +394,7 @@ To exit the `less` command, just press `q`.
 
 ---
 
-# Searching and redirecting outputs
+# Searching_and_redirecting_outputs
 
 ---
 
@@ -575,7 +575,7 @@ This will run the command that is in the 100th position in the history.
 
 ---
 
-# For loops in the shell
+# For_loops_in_the_shell
 
 ---
 ## Objectives
