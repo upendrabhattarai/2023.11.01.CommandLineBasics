@@ -785,7 +785,7 @@ The `grep` command can be used to search a specified pattern in the specified fi
 
 
 <details>
-<summary><b>::::Solution::::</b></summary>
+<summary markdown='span'><b>::::Solution::::</b></summary>
  
 ```bash
 for files in *.fasta
