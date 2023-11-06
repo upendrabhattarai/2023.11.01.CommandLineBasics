@@ -1,5 +1,14 @@
 # Crash Course in Command Line Basics
 
+Contents:
+
+[Introduction to the command line](#introduction)
+[Navigating the file system](#navigating_the_file_system)
+[Working with files and folders](#working_with_files_and_folders)
+[Searching and redirecting outputs](#searching_and_redirecting_outputs)
+[For loops in the shell](#for_loops_in_the_shell)
+
+
 ## Objectives
 
 - Explain the importance of learning the command line.
@@ -9,7 +18,8 @@
 
 ---
 # Introduction
-
+# Navigating the file system
+# Working with files a
 ---
 ## Why learn to use the command line?
 
@@ -561,10 +571,10 @@ This will run the command that is in the 100th position in the history.
 
 ---
 
-# For Loops in the Shell
+# For loops in the shell
 
 ---
-## **Objectives**
+## Objectives
 
 - Understand the concept of loops in shell scripting.
 
@@ -578,7 +588,7 @@ Loops are a powerful programming construct that enables us to execute a block of
 
 ---
 
-## **Syntax of For loop**
+## Syntax of For loop
 
 In shell scripting, a `for` loop follows a specific structure:
 
@@ -614,7 +624,7 @@ We have this `for` loop written in multiple lines with some indentation for read
 
 ---
 
-**Expanding the block of code with more commands.**
+## Multiple commands in the block of code
 
 Let's expand the block of code in the above example to execute more commands.
 This time we will use the `sleep` command to add 1 second delay for the execution of each iteration.
@@ -646,7 +656,7 @@ variable names can be anything; you don't have to use `numbers` as a variable na
 
 ---
 
-## More examples
+## Exercises 
 
 ### 1. Creating multiple files at once.
 
@@ -698,6 +708,7 @@ done
 
 Now you want to send a note to everyone on the meeting day to put their agendas on the file `Meeting_notes.txt`. Write a `for` loop to do it. Your message could include: `Hi <student name>, I am looking forward to our meeting today. Please put your agendas for today's meeting below.` You can also print the date with `date` command `$(date)`.
 
+
 <details>
     <summary>::::Hints::::</summary>
 
@@ -710,6 +721,7 @@ ${}: The dollar braces is for variable interpolation. You use it when normal str
 We can use `>` to direct the output from a command to a file. However, redirecting another output of a command to the same file will overwrite the content of the file. So, in order to append a new output/content in the same file, we can use `>>`.
 
 </details>
+
 
 <details>
     <summary>::::Solution::::</summary>
@@ -739,12 +751,14 @@ Now insert the following sequences into each file using the `for` loop. You can 
 >Sequence1\nACGTAGCTAGCTAGCTAGCTAGCTTAGCTAGCTAGAGCTAGCTAGCTGCTAGCT\n>Sequence2\nGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCAGCTAGCTTAGCTAGGCAGCTAGA\n>Sequence3\nTAGCTAGCTAGCTAGCTAGCTATAGCTAGCTAGCTCTAGCTAGCTAGCTGCTGT
 ```
 
+
 <details>
     <summary>::::Hints::::</summary>
   
-wild card `*.fasta` can specify all the files that end with .fasta inside the working directory.
+The wild card `*.fasta` can specify all the files that end with .fasta inside the working directory.
 
 </details>   
+
 
 
 <details>
@@ -781,4 +795,3 @@ do
 done
 ```
 </details>
-
