@@ -1,11 +1,15 @@
 # Crash Course in Command Line Basics
 
-Contents:
+## Course content:
 
 [Introduction to the command line](#introduction)
+
 [Navigating the file system](#navigating_the_file_system)
+
 [Working with files and folders](#working_with_files_and_folders)
+
 [Searching and redirecting outputs](#searching_and_redirecting_outputs)
+
 [For loops in the shell](#for_loops_in_the_shell)
 
 
