@@ -5,6 +5,7 @@
 - Explain the importance of learning the command line.
 - Navigate the file system using the command line.
 - Learn the basics of working with files and folders.
+- Use a `for` loop to automate repetitive tasks.
   
 ---
 
