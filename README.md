@@ -150,10 +150,10 @@ find out how to see hidden directories. List the contents of the directory with 
   <summary>::::::::::::::: Hint</summary>
 
   
-  Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`. \  
+Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`. \  
   
-  You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. \
-  You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
+You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. \
+You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
 
 
 </details>
@@ -162,24 +162,21 @@ find out how to see hidden directories. List the contents of the directory with 
   <summary>::::::::::::::: solution</summary>
   
 
-  First use the `man` command to look at the options for `ls`.
+First, use the `man` command to look at the options for `ls`.
   
 
+```bash
+man ls
+```
 
-  ```bash
-  man ls
-  ```
-
-
-  The `-a` option is short for `all` and says that it causes `ls` to "not ignore
-  entries starting with ." This is the option we want.
+The `-a` option is short for `all` and says that it causes `ls` to "not ignore entries starting with ." This is the option we want.
 
 
-  ```bash
-  ls -a
-  ```
+```bash
+ls -a
+```
 
-  You will see all the files and folders that were hidden and start with `.`
+You will see all the files and folders that were hidden and start with `.`
   
 
 </details>
@@ -202,7 +199,7 @@ You will see:
 
 
 ```output
-/home/your_user_name
+/home/<your_user_name>
 ```
 
 This is the full name of your home directory. This tells you that you
@@ -270,7 +267,7 @@ what will `ls ../backup` display?
   Also, we did not specify `-F` to display `/` at the end of the directory names.
 
 4. Yes: `../backup` refers to `/Users/backup`.
-5. 
+   
 
 </details>
 
@@ -425,19 +422,19 @@ To exit the `less` command, just press `q`.
 The `echo` command is used to display messages, or to create and write to files. It is similar to the `cat` command, but it is used to display a single line of text.
 
 ```bash
-  echo "Hello World"
+echo "Hello World"
 ```
 
 You can also use it to create a file:
 
 ```bash
-  echo "Hello World" > [filename]
+echo "Hello World" > [filename]
 ```
 
 You can also append to a file:
 
 ```bash
-  echo "Hello World" >> [filename]
+echo "Hello World" >> [filename]
 ```
 ---
 
@@ -446,13 +443,13 @@ You can also append to a file:
 The `grep` command is used to search for a text pattern in a file. It is very powerful and can be used to search for a string or regular expression in a file or set of files.
 
 ```bash
-  grep [searchterm] [filename]
+grep [searchterm] [filename]
 ```
 
 You can also search for a string in multiple files:
 
 ```bash
-  grep [searchterm] [filename] [filename]
+grep [searchterm] [filename] [filename]
 ```
 
 `grep` is a powerful command and there is so much more that you can do with it.
@@ -467,7 +464,7 @@ The `find` command is extremely powerful and is used to find the location of fil
 To start off by creating something to work with. Let's create 100 files in the current directory. This is one of those things that I talked about earlier where you can do certain things much faster than you could in the GUI. We already know that the `touch` command will create a file. It can also be used to create multiple files.
 
 ```bash
-  touch file-{001..100}.txt
+touch file-{001..100}.txt
 ```
 
 Now we have 100 .txt files in the current directory. Something that would have taken a lot longer to do in the GUI.
@@ -475,13 +472,13 @@ Now we have 100 .txt files in the current directory. Something that would have t
 Let's do something very simple and find a specific file. The format looks like this:
 
 ```bash
-  find [dirname] -name [filename]
+find [dirname] -name [filename]
 ```
 
 Let's find the file called `file-001.txt`:
 
 ```bash
-  find . -name "file-001.txt"
+find . -name "file-001.txt"
 ```
 
 This will look in the current directory, which is represented with a dot.
@@ -489,44 +486,44 @@ This will look in the current directory, which is represented with a dot.
 We can look in other directories as well. Let's create a file in our home folder called test.txt
 
 ```bash
-  touch ~/test.txt
+touch ~/test.txt
 ```
 
 To find that file:
 
 ```bash
-  find ~/ -name "test.txt"
+find ~/ -name "test.txt"
 ```
 
 We can look for files that match a certain pattern as well. Let's find all files that start with `file-`:
 
 ```bash
-  find . -name "file-*"
+find . -name "file-*"
 ```
 
 We can search for files that are empty:
 
 ```bash
-  find . -empty
+find . -empty
 ```
 
 Let's append some text to the file `file-002.txt`. We could use the `cat` command, like I showed you earlier, but we can also use the `echo` command:
 
 ```bash
-  echo "Hello World" >> file-002.txt
+echo "Hello World" >> file-002.txt
 ```
 
 Now if we find the empty files again, we will see that `file-002.txt` is no longer empty:
 
 ```bash
-  find . -empty
+find . -empty
 ```
 
 We can remove all of the files that we created with this command:
 
 ```bash
-  find . -name "file-*" -delete
-  rm -f file-* # This will also work
+find . -name "file-*" -delete
+rm -f file-* # This will also work
 ```
 
 There is so much more that you can do with the `find` command, but it goes beyond the scope of this tutorial.
@@ -538,13 +535,18 @@ There is so much more that you can do with the `find` command, but it goes beyon
 Used to display the history of commands that you have run.
 
 ```bash
-  history
+history
+```
+This might only print the last 15 commands from your history if you are in a new updated Mac OS. If that's the case to get all the history in your shell you can type:
+
+```bash
+history 1
 ```
 
 You can also use the `!` to run a command from the history.
 
 ```bash
-  !100
+!100
 ```
 
 This will run the command that is in the 100th position in the history.
