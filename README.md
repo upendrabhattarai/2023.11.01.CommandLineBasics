@@ -21,10 +21,9 @@
 - Use a `for` loop to automate repetitive tasks.
 
 ---
-# Introduction
-# Navigating the file system
-# Working with files a
----
+
+# Introduction_to_the_command_line
+
 ## Why learn to use the command line?
 
 <details>
