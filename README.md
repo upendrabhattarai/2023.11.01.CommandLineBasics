@@ -1,4 +1,4 @@
-# Crash Course in Command Line Basics
+# Command Line Basics
 
 ## Course content:
 
