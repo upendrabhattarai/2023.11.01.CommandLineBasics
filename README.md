@@ -2,15 +2,15 @@
 
 ## Course content:
 
-[Introduction to the command line](#introduction_to_the_command_line)
+ 1. [Introduction to the command line](#introduction_to_the_command_line)
 
-[Navigating the file system](#navigating_the_file_system)
+ 2. [Navigating the file system](#navigating_the_file_system)
 
-[Working with files and folders](#working_with_files_and_folders)
+ 3. [Working with files and folders](#working_with_files_and_folders)
 
-[Searching and redirecting outputs](#searching_and_redirecting_outputs)
+ 4. [Searching and redirecting outputs](#searching_and_redirecting_outputs)
 
-[For loops in the shell](#for_loops_in_the_shell)
+ 5. [For loops in the shell](#for_loops_in_the_shell)
 
 
 ## Objectives
