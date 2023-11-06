@@ -76,7 +76,7 @@ On a Mac or Linux machine, you can access a shell through "Terminal", which is a
 [Installation instructions](HowToInstallGitBash.md)
 
 ---
-# Navigating the file system
+# Navigating_the_file_system
 
 ---
 
