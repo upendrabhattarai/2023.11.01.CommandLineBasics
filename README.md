@@ -636,11 +636,13 @@ This time we will use the `sleep` command to add 1 second delay for the executio
     <summary>::::sleep command::::</summary>
 
 
+
 The `sleep` command suspends execution for an interval of time.
 
 Usage: `sleep [seconds]`
 
 For example, `sleep 1` for a 1-second delay.
+
 
 </details>
 
@@ -677,12 +679,14 @@ Use `touch` with a `for` loop to create 10 more text files `{11..20}.txt`
 <details>
     <summary>::::Solution::::</summary>
 
+
 ```bash
 for numbers in {11..20}
 do
   touch ${numbers}.txt
 done
 ```
+
 
 </details>
 
@@ -707,13 +711,14 @@ done
 
 ---
 
-#### Challenge 2:
+#### Challenge:
 
 Now you want to send a note to everyone on the meeting day to put their agendas on the file `Meeting_notes.txt`. Write a `for` loop to do it. Your message could include: `Hi <student name>, I am looking forward to our meeting today. Please put your agendas for today's meeting below.` You can also print the date with `date` command `$(date)`.
 
 
 <details>
     <summary>::::Hints::::</summary>
+
 
 `\n` indicates a line break.
 
@@ -723,11 +728,13 @@ ${}: The dollar braces is for variable interpolation. You use it when normal str
 
 We can use `>` to direct the output from a command to a file. However, redirecting another output of a command to the same file will overwrite the content of the file. So, in order to append a new output/content in the same file, we can use `>>`.
 
+
 </details>
 
 
 <details>
     <summary>::::Solution::::</summary>
+
 
 ```bash
 for students in Mandy Oskar Jeff Allison Eunji
@@ -735,6 +742,7 @@ do
   echo "$(date)\n Hi ${students}! I am looking forward to our meeting today.\n Please put on your agendas for today's meeting below." >> ${students}/meeting_notes.txt
 done
 ```
+
 
 </details>
 
@@ -757,8 +765,10 @@ Now insert the following sequences into each file using the `for` loop. You can 
 
 <details>
     <summary>::::Hints::::</summary>
+
   
 The wild card `*.fasta` can specify all the files that end with .fasta inside the working directory.
+
 
 </details>   
 
@@ -767,12 +777,15 @@ The wild card `*.fasta` can specify all the files that end with .fasta inside th
 <details>
     <summary>::::Solution::::</summary>
 
+
 ```bash
 for files in *.fasta
 do
   echo ">Sequence1\nACGTAGCTAGCTAGCTAGCTAGCTTAGCTAGCTAGAGCTAGCTAGCTGCTAGCT\n>Sequence2\nGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCAGCTAGCTTAGCTAGGCAGCTAG\n>Sequence3\nTAGCTAGCTAGCTAGCTAGCTATAGCTAGCTAGCTCTAGCTAGCTAGCTGCT" > $files
 done
 ```
+
+
 </details>
 
 Fasta file usually contains nucleotide or amino acid sequences. We do not usually generate these sequences with codes. These files are generated through a sequencing machine after sequencing the biological samples. For now, let's assume that we received these three fasta files from a sequencing core. 
@@ -783,13 +796,17 @@ Command you will be using: `grep`
 <details>
     <summary>::::Hint::::</summary>
 
+
 The `grep` command can be used to search a specified pattern in the specified file. As we know each fasta sequence has a header line and each header starts with a `>` sign. we can use `grep` with `-c` option to count the occurrence of `>` at the start of the line to get the number of sequences.
+
 
 </details>
 
+
 <details>
     <summary>::::Solution::::</summary>
-  
+
+
 ```bash
 for files in *.fasta
 do
@@ -797,4 +814,6 @@ do
   grep -c "^>" $files
 done
 ```
+
+
 </details>
