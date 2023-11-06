@@ -61,8 +61,7 @@ There are so many tools especially when it comes to dealing with omics data you 
 
 ## Few terminologies:
 
-**Command line** or the **Terminal** is the interface in a computer system that allows you to enter commands and receive output. **Command line** is predominantly used in Windows OS, where their version of the **Terminal** is known as the **Command line** or **CMD**. In contrast, **Terminal** is the default command line interface for Mac and Unix-based OS. 
-The **Shell** is essentially the program that operates behind the command line interface, interpreting user input and displaying output. Commonly referred to as an **interpreter**. **Bash** is one of the most widely used shell programs and is typically the default on many Unix/Linux systems. Notably, it was the default shell on Mac for an extended period, but more recently, they transitioned from **Bash** to **Zsh**.
+**Command line** or the **Terminal** is the interface in a computer system that allows you to enter commands and receive output. **Command line** is predominantly used in Windows OS, where their version of the **Terminal** is known as the **Command line** or **CMD**. In contrast, **Terminal** is the default command line interface for Mac and Unix-based OS. The **Shell** is essentially the program that operates behind the command line interface, interpreting user input and displaying output. Commonly referred to as an **interpreter**. **Bash** is one of the most widely used shell programs and is typically the default on many Unix/Linux systems. Notably, it was the default shell on Mac for an extended period, but more recently, they transitioned from **Bash** to **Zsh**.
 
 ---
 
@@ -158,8 +157,7 @@ Of course, you can group flags together. For example, if I want to see more info
 
 ### Finding hidden files and directories in your home folder.
 
-First navigate to your `home` directory, if you are not already there. Explore the options for `ls` to
-find out how to see hidden directories. List the contents of the directory with the option to display all the hidden items there.
+First navigate to your `home` directory, if you are not already there. Explore the options for `ls` to find out how to see hidden directories. List the contents of the directory with the option to display all the hidden items there.
 
 <details>
   <summary markdown='span'>::::::::::::::: Hint</summary>
@@ -167,8 +165,7 @@ find out how to see hidden directories. List the contents of the directory with 
   
 Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`. \  
   
-You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. \
-You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
+You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. \ You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
 
 
 </details>
@@ -198,12 +195,7 @@ You will see all the files and folders that were hidden and start with `.`
 
 ## Full vs. Relative Paths
 
-The `cd` command takes an argument which is a directory
-name. Directories can be specified using either a *relative* path or a
-full *absolute* path. The directories on the computer are arranged into a
-hierarchy. The full path tells you where a directory is in that
-hierarchy. Navigate to the home directory, then enter the `pwd`
-command.
+The `cd` command takes an argument which is a directory name. Directories can be specified using either a *relative* path or a full *absolute* path. The directories on the computer are arranged into a hierarchy. The full path tells you where a directory is in that hierarchy. Navigate to the home directory, then enter the `pwd` command.
 
 ```bash
 cd  
@@ -217,12 +209,7 @@ You will see:
 /home/<your_user_name>
 ```
 
-This is the full name of your home directory. This tells you that you
-are in a directory called `your_user_name`, which sits inside a directory called
-`home` which sits inside the very top directory in the hierarchy. The
-very top of the hierarchy is a directory called `/` which is usually
-referred to as the *root directory*. So, to summarize: the home folder for your user is a
-directory in `home` which is a directory in `/`.
+This is the full name of your home directory. This tells you that you are in a directory called `your_user_name`, which sits inside a directory called `home` which sits inside the very top directory in the hierarchy. The very top of the hierarchy is a directory called `/` which is usually referred to as the *root directory*. So, to summarize: the home folder for your user is a directory in `home` which is a directory in `/`.
 
 ---
 
@@ -238,22 +225,13 @@ Or
 cd Desktop/dir_1/dir_2/dir_3/
 ```
 
-These two commands have the same effect, they both take us to the `dir_3` directory.
-The first uses the absolute path, giving the full address from the root directory. The
-second uses a relative path, giving only the address from your working directory in this case your home directory. A full
-path always starts with a `/`. A relative path does not.
+These two commands have the same effect, they both take us to the `dir_3` directory. The first uses the absolute path, giving the full address from the root directory. The second uses a relative path, giving only the address from your working directory in this case your home directory. A full path always starts with a `/`. A relative path does not.
 
-A relative path is like getting directions from someone on the street. They tell you to
-"go right at the stop sign, and then turn left on Main Street". That works great if
-you're standing there together, but not so well if you're trying to tell someone how to
-get there from another country. A full path is like GPS coordinates. It tells you exactly
-where something is no matter where you are right now.
+A relative path is like getting directions from someone on the street. They tell you to "go right at the stop sign, and then turn left on Main Street". That works great if you're standing there together, but not so well if you're trying to tell someone how to get there from another country. A full path is like GPS coordinates. It tells you exactly where something is no matter where you are right now.
 
 You can usually use either a full path or a relative path depending on what is most convenient.
 
-Over time, it will become easier for you to keep a mental note of the
-structure of the directories that you are using and how to quickly
-navigate amongst them.
+Over time, it will become easier for you to keep a mental note of the structure of the directories that you are using and how to quickly navigate amongst them.
 
 
 ## Challenge-2: Relative path resolution
@@ -629,8 +607,7 @@ We have this `for` loop written in multiple lines with some indentation for read
 
 ## Multiple commands in the block of code
 
-Let's expand the block of code in the above example to execute more commands.
-This time we will use the `sleep` command to add 1 second delay for the execution of each iteration.
+Let's expand the block of code in the above example to execute more commands. This time we will use the `sleep` command to add 1 second delay for the execution of each iteration.
 
 <details>
 <summary markdown='span'><b>::::sleep command::::</b></summary>
@@ -772,8 +749,7 @@ done
 ```
 </details>
 
-Fasta file usually contains nucleotide or amino acid sequences. We do not usually generate these sequences with codes. These files are generated through a sequencing machine after sequencing the biological samples. For now, let's assume that we received these three fasta files from a sequencing core. 
-Now, using a `for` loop, count how many sequences are there in each fasta file. 
+Fasta file usually contains nucleotide or amino acid sequences. We do not usually generate these sequences with codes. These files are generated through a sequencing machine after sequencing the biological samples. For now, let's assume that we received these three fasta files from a sequencing core. Now, using a `for` loop, count how many sequences are there in each fasta file. 
 
 Command you will be using: `grep`
 
