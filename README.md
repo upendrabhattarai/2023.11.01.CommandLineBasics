@@ -22,7 +22,7 @@
 
 ---
 
-# Introduction_to_the_command_line
+# Introduction to the command line
 
 ## Why learn to use the command line?
 
