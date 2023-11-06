@@ -560,9 +560,9 @@ You can also use the `!` to run a command from the history.
 This will run the command that is in the 100th position in the history.
 
 ---
-# Part - 2
 
 # For Loops in the Shell
+
 ---
 ## **Objectives**
 
