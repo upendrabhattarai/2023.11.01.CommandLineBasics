@@ -659,11 +659,9 @@ done
 variable names can be anything; you don't have to use `numbers` as a variable name for `1 2 3 4` as in the above two examples. You can replace this variable name: `numbers` with anything, eg., `x` or `i` or any other random letters, words, or even numbers. However, having a meaningful variable name will increase the interpretability of the codes.
 
 
----
+--- 
 
-## Exercises 
-
-### 1. Creating multiple files at once.
+## 1. Creating multiple files at once.
 
 Create 10 empty files using the `touch` command.
 
@@ -673,21 +671,17 @@ touch {1..10}.txt
 
 Type `ls` to display the output.
 
-#### Challenge 1:
+#### Exercise:
 Use `touch` with a `for` loop to create 10 more text files `{11..20}.txt`
 
 <details>
     <summary>::::Solution::::</summary>
-
-
 ```bash
 for numbers in {11..20}
 do
   touch ${numbers}.txt
 done
 ```
-
-
 </details>
 
 Use `ls` to display the output from the above `for` loop.
@@ -695,7 +689,7 @@ Use `ls` to display the output from the above `for` loop.
 
 ---
 
-### 2. Setting up a Scenario-1.
+## 2. Setting up a Scenario-1.
 Suppose you are a Principal Investigator (PI) in your lab, and you have five new graduate students this year: `Allison, Jeff, Sam, Eunji, and Oskar`. You want to set up a folder for each of your students to share files between the two of you. You also want to create a text file, `Meeting_notes.txt` inside each of your students' folders to record your meeting agendas and notes. Create a folder named `students` on your desktop and prepare the file system inside it using a for loop.
 
 Commands you will be using: `mkdir` and `touch`.
@@ -711,7 +705,7 @@ done
 
 ---
 
-#### Challenge:
+#### Exercise:
 
 Now you want to send a note to everyone on the meeting day to put their agendas on the file `Meeting_notes.txt`. Write a `for` loop to do it. Your message could include: `Hi <student name>, I am looking forward to our meeting today. Please put your agendas for today's meeting below.` You can also print the date with `date` command `$(date)`.
 
@@ -748,7 +742,7 @@ done
 
 ---
 
-### 3. Setting up a Scenario 2:
+## 3. Setting up a Scenario 2:
 
 First, let's create three fasta files with the `touch` command.
 `file_1.fasta`, `file_2.fasta`, `file_3.fasta`
@@ -756,6 +750,8 @@ First, let's create three fasta files with the `touch` command.
 ```bash
 touch file_{1..3}.fasta
 ```
+#### Exercise:
+
 Now insert the following sequences into each file using the `for` loop. You can use wild card `*` to specify the list of fasta files.
 
 ```bash
@@ -765,27 +761,19 @@ Now insert the following sequences into each file using the `for` loop. You can 
 
 <details>
     <summary>::::Hints::::</summary>
-
-  
 The wild card `*.fasta` can specify all the files that end with .fasta inside the working directory.
-
-
 </details>   
 
 
 
 <details>
     <summary>::::Solution::::</summary>
-
-
 ```bash
 for files in *.fasta
 do
   echo ">Sequence1\nACGTAGCTAGCTAGCTAGCTAGCTTAGCTAGCTAGAGCTAGCTAGCTGCTAGCT\n>Sequence2\nGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCAGCTAGCTTAGCTAGGCAGCTAG\n>Sequence3\nTAGCTAGCTAGCTAGCTAGCTATAGCTAGCTAGCTCTAGCTAGCTAGCTGCT" > $files
 done
 ```
-
-
 </details>
 
 Fasta file usually contains nucleotide or amino acid sequences. We do not usually generate these sequences with codes. These files are generated through a sequencing machine after sequencing the biological samples. For now, let's assume that we received these three fasta files from a sequencing core. 
@@ -795,18 +783,12 @@ Command you will be using: `grep`
 
 <details>
     <summary>::::Hint::::</summary>
-
-
 The `grep` command can be used to search a specified pattern in the specified file. As we know each fasta sequence has a header line and each header starts with a `>` sign. we can use `grep` with `-c` option to count the occurrence of `>` at the start of the line to get the number of sequences.
-
-
 </details>
 
 
 <details>
     <summary>::::Solution::::</summary>
-
-
 ```bash
 for files in *.fasta
 do
@@ -814,6 +796,4 @@ do
   grep -c "^>" $files
 done
 ```
-
-
 </details>
