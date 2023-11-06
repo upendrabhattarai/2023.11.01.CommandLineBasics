@@ -27,14 +27,14 @@
 ## Why learn to use the command line?
 
 <details>
-  <summary> Greater control</summary>
+  <summary><b>Greater control</b></summary>
 
 While the Graphical user interface (GUI) of an operating system (OS) offers a user-friendly and visually appealing experience, the command line provides a way to access the system's backend. This grants you the ability to perform tasks that may not be readily achievable through the GUI. For instance, when encountering computer issues, the command line can be a valuable tool for checking error logs and running diagnostic tools. It also allows you to manage permissions, and user access, and execute complex tasks that might only be possible via the command line.
 
 </details>
 
 <details>
-  <summary> Speed and Efficiency</summary>
+  <summary><b>Speed and Efficiency</b></summary>
   
 Despite its steep learning curve, the command line offers efficient and quick ways to navigate your system. For example, when dealing with hundreds or thousands of files that require processing through a pipeline, manually handling them through a GUI could take hours or even days. In contrast, the command line allows you to automate these repetitive tasks, reducing the likelihood of errors. You can also create aliases for frequently used commands to enhance speed and efficiency. This eliminates the need to switch back and forth between the mouse and keyboard, making command line work significantly more efficient in many respects.
 
@@ -42,7 +42,7 @@ Despite its steep learning curve, the command line offers efficient and quick wa
 
 
 <details>
-  <summary> Access remote servers</summary>
+  <summary><b>Access remote servers</b></summary>
 
 When working with large datasets, such as high-throughput sequencing data, there are instances where your local PC may not have the processing capacity to handle the millions of sequencing reads effectively. In such situations, you often need to access high-performance computing clusters for enhanced computing power. This can be achieved through the command-line interface, allowing you to connect to remote servers and leverage their computational resources.
     
@@ -50,7 +50,7 @@ When working with large datasets, such as high-throughput sequencing data, there
 
 
 <details>
-  <summary> Command line tools</summary>
+  <summary><b>Command line tools</b></summary>
   
 There are so many tools especially when it comes to dealing with omics data you simply don't have any GUI options. To install and use these tools, you must rely on the command line interface. In many cases, the command line versions offer additional features and parameter options that are not present in their GUI versions. For example, BLAST provides advanced functions that can only be accessed through the command line.
 
