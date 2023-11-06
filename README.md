@@ -6,17 +6,17 @@
 - Navigate the file system using the command line.
 - Learn the basics of working with files and folders.
 - Use a `for` loop to automate repetitive tasks.
-  
----
 
+---
+# Introduction
+
+---
 ## Why learn to use the command line?
 
 <details>
   <summary> Greater control</summary>
 
 While the Graphical user interface (GUI) of an operating system (OS) offers a user-friendly and visually appealing experience, the command line provides a way to access the system's backend. This grants you the ability to perform tasks that may not be readily achievable through the GUI. For instance, when encountering computer issues, the command line can be a valuable tool for checking error logs and running diagnostic tools. It also allows you to manage permissions, and user access, and execute complex tasks that might only be possible via the command line.
-
-
 
 </details>
 
@@ -28,14 +28,12 @@ Despite its steep learning curve, the command line offers efficient and quick wa
 </details>
 
 
-
 <details>
   <summary> Access remote servers</summary>
 
 When working with large datasets, such as high-throughput sequencing data, there are instances where your local PC may not have the processing capacity to handle the millions of sequencing reads effectively. In such situations, you often need to access high-performance computing clusters for enhanced computing power. This can be achieved through the command-line interface, allowing you to connect to remote servers and leverage their computational resources.
     
 </details>
-
 
 
 <details>
@@ -62,6 +60,9 @@ On a Mac or Linux machine, you can access a shell through "Terminal", which is a
 [Download link: Git Bash](https://gitforwindows.org/) 
 
 [Installation instructions](HowToInstallGitBash.md)
+
+---
+# Navigating the file system
 
 ---
 
@@ -273,8 +274,11 @@ what will `ls ../backup` display?
 </details>
 
 ---
+# Working with files and folders
 
-## Modifying Files & Directories
+---
+
+## Modifying Files & folders
 
 | Command                     | Description                                         |
 | --------------------------- | --------------------------------------------------- |
@@ -362,12 +366,27 @@ You can also specify the number of lines to output:
 ```bash
 tail -n 5 [filename]
 ```
+---
+
+## The `less` Command
+
+The `less` command is used to view the contents of a file. It is similar to the `cat` command, but it allows you to scroll up and down.
+
+```bash
+less [filename]
+```
+
+To exit the `less` command, just press `q`.
+
+---
+
+# Searching and redirecting outputs
 
 ---
 
 ## The `cat` (concatenate) Command
 
-The cat command is a very common command and allows you to create single or multiple files, view content of a file, concatenate files and redirect output in terminal or files.
+The cat command is a very common command and allows you to create single or multiple files, view the content of a file, concatenate files, and redirect output in the terminal or files.
 
 The most common thing cat is used for is to display the contents of a file:
 
@@ -404,23 +423,12 @@ cat -n [filename]
 
 There are other uses of cat command, you can check its manual for more details.
 
----
-
-## The `less` Command
-
-The `less` command is used to view the contents of a file. It is similar to the `cat` command, but it allows you to scroll up and down.
-
-```bash
-less [filename]
-```
-
-To exit the `less` command, just press `q`.
 
 ---
 
 ## The `echo` Command
 
-The `echo` command is used to display messages, or to create and write to files. It is similar to the `cat` command, but it is used to display a single line of text.
+The `echo` command is used to display messages or to create and write to files. It is similar to the `cat` command, but it is used to display a single line of text.
 
 ```bash
 echo "Hello World"
@@ -456,7 +464,6 @@ grep [searchterm] [filename] [filename]
 `grep` is a powerful command and there is so much more that you can do with it.
 
 ---
-
 
 ## The `find` command
 
@@ -639,9 +646,11 @@ variable names can be anything; you don't have to use `numbers` as a variable na
 
 ---
 
-## Examples
+## More examples
 
-###1. Create 10 empty files using the `touch` command.
+### 1. Creating multiple files at once.
+
+Create 10 empty files using the `touch` command.
 
 ```bash
 touch {1..10}.txt
@@ -649,7 +658,7 @@ touch {1..10}.txt
 
 Type `ls` to display the output.
 
-### Challenge 1:
+#### Challenge 1:
 Use `touch` with a `for` loop to create 10 more text files `{11..20}.txt`
 
 <details>
@@ -664,17 +673,17 @@ done
 
 </details>
 
-
 Use `ls` to display the output from the above `for` loop.
 
 
-### 2. Setting up a scenario-1.
+---
+
+### 2. Setting up a Scenario-1.
 Suppose you are a Principal Investigator (PI) in your lab, and you have five new graduate students this year: `Allison, Jeff, Sam, Eunji, and Oskar`. You want to set up a folder for each of your students to share files between the two of you. You also want to create a text file, `Meeting_notes.txt` inside each of your students' folders to record your meeting agendas and notes. Create a folder named `students` on your desktop and prepare the file system inside it using a for loop.
 
 Commands you will be using: `mkdir` and `touch`.
 
  
-
 ```bash
 for students in Allison Jeff Sam Eunji Oskar
 do
@@ -683,7 +692,9 @@ do
 done
 ```
 
-## Challenge 2:
+---
+
+#### Challenge 2:
 
 Now you want to send a note to everyone on the meeting day to put their agendas on the file `Meeting_notes.txt`. Write a `for` loop to do it. Your message could include: `Hi <student name>, I am looking forward to our meeting today. Please put your agendas for today's meeting below.` You can also print the date with `date` command `$(date)`.
 
@@ -712,8 +723,10 @@ done
 
 </details>
 
+---
 
-## Setting up a scenario-2:
+### 3. Setting up a Scenario 2:
+
 First, let's create three fasta files with the `touch` command.
 `file_1.fasta`, `file_2.fasta`, `file_3.fasta`
 
