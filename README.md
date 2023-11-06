@@ -2,7 +2,7 @@
 
 ## Course content:
 
-[Introduction to the command line](#introduction)
+[Introduction to the command line](#introduction_to_the_command_line)
 
 [Navigating the file system](#navigating_the_file_system)
 
