@@ -27,14 +27,14 @@
 ## Why learn to use the command line?
 
 <details>
-  <summary markdown='span'><b>Greater control</b></summary>
+<summary markdown='span'><b>Greater control</b></summary>
 
 While the Graphical user interface (GUI) of an operating system (OS) offers a user-friendly and visually appealing experience, the command line provides a way to access the system's backend. This grants you the ability to perform tasks that may not be readily achievable through the GUI. For instance, when encountering computer issues, the command line can be a valuable tool for checking error logs and running diagnostic tools. It also allows you to manage permissions, and user access, and execute complex tasks that might only be possible via the command line.
 
 </details>
 
 <details>
-  <summary markdown='span'><b>Speed and Efficiency</b></summary>
+<summary markdown='span'><b>Speed and Efficiency</b></summary>
   
 Despite its steep learning curve, the command line offers efficient and quick ways to navigate your system. For example, when dealing with hundreds or thousands of files that require processing through a pipeline, manually handling them through a GUI could take hours or even days. In contrast, the command line allows you to automate these repetitive tasks, reducing the likelihood of errors. You can also create aliases for frequently used commands to enhance speed and efficiency. This eliminates the need to switch back and forth between the mouse and keyboard, making the command line work significantly more efficient in many respects.
 
@@ -42,7 +42,7 @@ Despite its steep learning curve, the command line offers efficient and quick wa
 
 
 <details>
-  <summary markdown='span'><b>Access remote servers</b></summary>
+<summary markdown='span'><b>Access remote servers</b></summary>
 
 When working with large datasets, such as high-throughput sequencing data, there are instances where your local PC may not have the processing capacity to handle the millions of sequencing reads effectively. In such situations, you often need to access high-performance computing clusters for enhanced computing power. This can be achieved through the command-line interface, allowing you to connect to remote servers and leverage their computational resources.
     
@@ -50,7 +50,7 @@ When working with large datasets, such as high-throughput sequencing data, there
 
 
 <details>
-  <summary markdown='span'><b>Command line tools</b></summary>
+<summary markdown='span'><b>Command line tools</b></summary>
   
 There are so many tools especially when it comes to dealing with omics data you simply don't have any GUI options. To install and use these tools, you must rely on the command line interface. In many cases, the command line versions offer additional features and parameter options that are not present in their GUI versions. For example, BLAST provides advanced functions that can only be accessed through the command line.
 
@@ -160,18 +160,20 @@ Of course, you can group flags together. For example, if I want to see more info
 
 First navigate to your `home` directory, if you are not already there. Explore the options for `ls` to find out how to see hidden directories. List the contents of the directory with the option to display all the hidden items there.
 
+###
 <details>
-  <summary markdown='span'><b>::::Hint::::</b></summary
+<summary markdown='span'><b>::::Hint::::</b></summary
 
 Hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.  
 
 You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
 </details>
 
+###
 
-
+###
 <details>
-  <summary markdown='span'><b>::::Solution::::</b></summary>
+<summary markdown='span'><b>::::Solution::::</b></summary>
 
 First, use the `man` command to look at the options for `ls`.
   
@@ -188,6 +190,7 @@ ls -a
 You will see all the files and folders that were hidden and start with `.`
 </details>
 
+###
 
 ### Full vs. Relative Paths
 
@@ -242,9 +245,10 @@ what will `ls ../backup` display?
 
 ![](fig/filesystem-challenge.svg)
 
-<details>
-  <summary markdown='span'><b>::::Solution::::</b></summary>
 
+###
+<details>
+<summary markdown='span'><b>::::Solution::::</b></summary>
 
 1. No: there *is* a directory `backup` in `/Users`.
    
@@ -256,9 +260,9 @@ what will `ls ../backup` display?
 
 4. Yes: `../backup` refers to `/Users/backup`.
    
-
 </details>
 
+###
 ---
 # Working_with_files_and_folders
 
@@ -603,8 +607,9 @@ We have this `for` loop written in multiple lines with some indentation for read
 
 Let's expand the block of code in the above example to execute more commands. This time we will use the `sleep` command to add 1 second delay for the execution of each iteration.
 
+###
 <details>
-<summary markdown='span'><b>::::sleep command::::</b></summary>
+<summary markdown='span'><b>::::More on sleep command::::</b></summary>
 
 The `sleep` command suspends execution for an interval of time.
 
@@ -613,6 +618,7 @@ Usage: `sleep [seconds]`
 For example, `sleep 1` for a 1-second delay.
 </details>
 
+####
 
 ```bash
 for numbers in {1..4}
@@ -641,6 +647,7 @@ Type `ls` to display the output.
 #### Exercise:
 Use `touch` with a `for` loop to create 10 more text files `{11..20}.txt`
 
+###
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
  
@@ -652,6 +659,7 @@ done
 ```
 </details>
 
+###
 Use `ls` to display the output from the above `for` loop.
 
 
@@ -677,7 +685,7 @@ done
 
 Now you want to send a note to everyone on the meeting day to put their agendas on the file `Meeting_notes.txt`. Write a `for` loop to do it. Your message could include: `Hi <student name>, I am looking forward to our meeting today. Please put your agendas for today's meeting below.` You can also print the date with `date` command `$(date)`.
 
-
+###
 <details>
 <summary markdown='span'><b>::::Hints::::</b></summary>
 
@@ -694,7 +702,9 @@ We can use `>` to direct the output from a command to a file. However, redirecti
 </details>
 
 
-**
+###
+
+###
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
 
@@ -706,6 +716,7 @@ done
 ```
 </details>
 
+###
 ---
 
 ## 3. Setting up the Scenario-2:
@@ -724,15 +735,18 @@ Now insert the following sequences into each file using the `for` loop. You can 
 >Sequence1\nACGTAGCTAGCTAGCTAGCTAGCTTAGCTAGCTAGAGCTAGCTAGCTGCTAGCT\n>Sequence2\nGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCAGCTAGCTTAGCTAGGCAGCTAGA\n>Sequence3\nTAGCTAGCTAGCTAGCTAGCTATAGCTAGCTAGCTCTAGCTAGCTAGCTGCTGT
 ```
 
-**
+###
+
 <details>
 <summary markdown='span'><b>::::Hints::::</b></summary>
  
 The wild card `*.fasta` can specify all the files that end with .fasta inside the working directory.
 </details>   
 
+###
 
-**
+###
+
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
  
@@ -744,17 +758,22 @@ done
 ```
 </details>
 
+###
+
 Fasta file usually contains nucleotide or amino acid sequences. We do not usually generate these sequences with codes. These files are generated through a sequencing machine after sequencing the biological samples. For now, let's assume that we received these three fasta files from a sequencing core. Now, using a `for` loop, count how many sequences are there in each fasta file. 
 
 Command you will be using: `grep`
 
+###
 <details>
-<summary markdown='span'><b>::::Hint::::</b></summary>
+<summary markdown='span'><b>::::Hints::::</b></summary>
  
 The `grep` command can be used to search a specified pattern in the specified file. As we know each fasta sequence has a header line and each header starts with a `>` sign. we can use `grep` with `-c` option to count the occurrence of `>` at the start of the line to get the number of sequences.
 </details>
 
-**
+###
+
+###
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
  
@@ -766,3 +785,4 @@ do
 done
 ```
 </details>
+###
