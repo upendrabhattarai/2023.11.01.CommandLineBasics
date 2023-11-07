@@ -171,7 +171,6 @@ You can open the manual page or help page for the `ls` command and search inside
 
 ###
 
-###
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
 
@@ -263,6 +262,7 @@ what will `ls ../backup` display?
 </details>
 
 ###
+
 ---
 # Working_with_files_and_folders
 
@@ -704,7 +704,7 @@ We can use `>` to direct the output from a command to a file. However, redirecti
 
 ###
 
-###
+
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
 
@@ -717,6 +717,7 @@ done
 </details>
 
 ###
+
 ---
 
 ## 3. Setting up the Scenario-2:
@@ -745,7 +746,6 @@ The wild card `*.fasta` can specify all the files that end with .fasta inside th
 
 ###
 
-###
 
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
@@ -760,11 +760,13 @@ done
 
 ###
 
+
 Fasta file usually contains nucleotide or amino acid sequences. We do not usually generate these sequences with codes. These files are generated through a sequencing machine after sequencing the biological samples. For now, let's assume that we received these three fasta files from a sequencing core. Now, using a `for` loop, count how many sequences are there in each fasta file. 
 
 Command you will be using: `grep`
 
 ###
+
 <details>
 <summary markdown='span'><b>::::Hints::::</b></summary>
  
@@ -773,7 +775,6 @@ The `grep` command can be used to search a specified pattern in the specified fi
 
 ###
 
-###
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
  
@@ -785,4 +786,3 @@ do
 done
 ```
 </details>
-###
