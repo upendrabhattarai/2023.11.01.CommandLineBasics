@@ -27,7 +27,7 @@
 ## Why learn to use the command line?
 
 <details>
-<summary markdown='span'><b>Greater control</b></summary>
+<summary markdown='span'><b>:arrow_forward:Greater control</b></summary>
 
 While the Graphical user interface (GUI) of an operating system (OS) offers a user-friendly and visually appealing experience, the command line provides a way to access the system's backend. This grants you the ability to perform tasks that may not be readily achievable through the GUI. For instance, when encountering computer issues, the command line can be a valuable tool for checking error logs and running diagnostic tools. It also allows you to manage permissions, and user access, and execute complex tasks that might only be possible via the command line.
 
