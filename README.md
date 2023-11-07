@@ -645,6 +645,7 @@ touch {1..10}.txt
 Type `ls` to display the output.
 
 #### Exercise:
+
 Use `touch` with a `for` loop to create 10 more text files `{11..20}.txt`
 
 ###
@@ -660,6 +661,7 @@ done
 </details>
 
 ###
+
 Use `ls` to display the output from the above `for` loop.
 
 
@@ -709,7 +711,7 @@ We can use `>` to direct the output from a command to a file. However, redirecti
 <summary markdown='span'><b>::::Solution::::</b></summary>
 
 ```bash
-for students in Mandy Oskar Jeff Allison Eunji
+for students in Allison Jeff Sam Eunji Oskar
 do
   echo "$(date)\n Hi ${students}! I am looking forward to our meeting today.\n Please put on your agendas for today's meeting below." >> ${students}/meeting_notes.txt
 done
