@@ -161,12 +161,14 @@ Of course, you can group flags together. For example, if I want to see more info
 First navigate to your `home` directory, if you are not already there. Explore the options for `ls` to find out how to see hidden directories. List the contents of the directory with the option to display all the hidden items there.
 
 ###
+
 <details>
-<summary markdown='span'><b>🖇️🖇️ Hint 🖇️🖇️</b></summary
+<summary markdown='span'><b>🖇️🖇️ Hint 🖇️🖇️</b></summary>
 
 Hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.  
 
 You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
+
 </details>
 
 ###
