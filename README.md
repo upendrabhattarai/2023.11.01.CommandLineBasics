@@ -162,7 +162,7 @@ First navigate to your `home` directory, if you are not already there. Explore t
 
 ###
 <details>
-<summary markdown='span'><b>:paperclip: Hint :paperclip:</b></summary
+<summary markdown='span'><b>🖇️🖇️ Hint 🖇️🖇️</b></summary
 
 Hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.  
 
@@ -172,7 +172,7 @@ You can open the manual page or help page for the `ls` command and search inside
 ###
 
 <details>
-<summary markdown='span'><b>:bell: Solution :bell:</b></summary>
+<summary markdown='span'><b>🔔🔔 Solution 🔔🔔</b></summary>
 
 First, use the `man` command to look at the options for `ls`.
   
@@ -247,7 +247,7 @@ what will `ls ../backup` display?
 
 ###
 <details>
-<summary markdown='span'><b>:bell: Solution :bell:</b></summary>
+<summary markdown='span'><b>🔔🔔 Solution 🔔🔔</b></summary>
 
 1. No: there *is* a directory `backup` in `/Users`.
    
@@ -609,7 +609,7 @@ Let's expand the block of code in the above example to execute more commands. Th
 
 ###
 <details>
-<summary markdown='span'><b>:paperclip: More on sleep command :paperclip:</b></summary>
+<summary markdown='span'><b>🖇️🖇️ More on sleep command 🖇️🖇️</b></summary>
 
 The `sleep` command suspends execution for an interval of time.
 
@@ -650,7 +650,7 @@ Use `touch` with a `for` loop to create 10 more text files `{11..20}.txt`
 
 ###
 <details>
-<summary markdown='span'><b>:bell: Solution :bell:</b></summary>
+<summary markdown='span'><b>🔔🔔 Solution 🔔🔔</b></summary>
  
 ```bash
 for numbers in {11..20}
@@ -689,7 +689,7 @@ Now you want to send a note to everyone on the meeting day to put their agendas 
 
 ###
 <details>
-<summary markdown='span'><b>:paperclip: Hints :paperclip:</b></summary>
+<summary markdown='span'><b>🖇️🖇️ Hints 🖇️🖇️</b></summary>
 
 `\n` indicates a line break.
 
@@ -708,7 +708,7 @@ We can use `>` to direct the output from a command to a file. However, redirecti
 
 
 <details>
-<summary markdown='span'><b>:bell: Solution :bell:</b></summary>
+<summary markdown='span'><b>🔔🔔 Solution 🔔🔔</b></summary>
 
 ```bash
 for students in Allison Jeff Sam Eunji Oskar
@@ -741,7 +741,7 @@ Now insert the following sequences into each file using the `for` loop. You can 
 ###
 
 <details>
-<summary markdown='span'><b>:paperclip: Hints :paperclip:</b></summary>
+<summary markdown='span'><b>🖇️🖇️ Hints 🖇️🖇️</b></summary>
  
 The wild card `*.fasta` can specify all the files that end with .fasta inside the working directory.
 </details>   
@@ -750,7 +750,7 @@ The wild card `*.fasta` can specify all the files that end with .fasta inside th
 
 
 <details>
-<summary markdown='span'><b>:bell: Solution :bell:</b></summary>
+<summary markdown='span'><b>🔔🔔 Solution 🔔🔔</b></summary>
  
 ```bash
 for files in *.fasta
@@ -770,7 +770,7 @@ Command you will be using: `grep`
 ###
 
 <details>
-<summary markdown='span'><b>:paperclip: Hints :paperclip:</b></summary>
+<summary markdown='span'><b>🖇️🖇️ Hints 🖇️🖇️</b></summary>
  
 The `grep` command can be used to search a specified pattern in the specified file. As we know each fasta sequence has a header line and each header starts with a `>` sign. we can use `grep` with `-c` option to count the occurrence of `>` at the start of the line to get the number of sequences.
 </details>
@@ -778,7 +778,7 @@ The `grep` command can be used to search a specified pattern in the specified fi
 ###
 
 <details>
-<summary markdown='span'><b>:bell: Solution :bell:</b></summary>
+<summary markdown='span'><b>🔔🔔 Solution 🔔🔔</b></summary>
  
 ```bash
 for files in *.fasta
