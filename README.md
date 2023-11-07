@@ -36,7 +36,7 @@ While the Graphical user interface (GUI) of an operating system (OS) offers a us
 <details>
   <summary markdown='span'><b>Speed and Efficiency</b></summary>
   
-Despite its steep learning curve, the command line offers efficient and quick ways to navigate your system. For example, when dealing with hundreds or thousands of files that require processing through a pipeline, manually handling them through a GUI could take hours or even days. In contrast, the command line allows you to automate these repetitive tasks, reducing the likelihood of errors. You can also create aliases for frequently used commands to enhance speed and efficiency. This eliminates the need to switch back and forth between the mouse and keyboard, making command line work significantly more efficient in many respects.
+Despite its steep learning curve, the command line offers efficient and quick ways to navigate your system. For example, when dealing with hundreds or thousands of files that require processing through a pipeline, manually handling them through a GUI could take hours or even days. In contrast, the command line allows you to automate these repetitive tasks, reducing the likelihood of errors. You can also create aliases for frequently used commands to enhance speed and efficiency. This eliminates the need to switch back and forth between the mouse and keyboard, making the command line work significantly more efficient in many respects.
 
 </details>
 
@@ -91,7 +91,7 @@ Before we look at some common commands, I just want to note a few keyboard comma
 
 ---
 
-### Manual Command
+#### man
 
 On Linux and Mac, the `man` command is used to show the **manual** of any command that you can run in the terminal. So if you want to know more about the `ls` command, you could run:
 
@@ -109,7 +109,7 @@ You should be able to use the arrow keys or page up and down. When you are ready
 
 ---
 
-### The `whoami` Command
+#### whoami
 
 The `whoami` command will show you the current user that you are logged in as.
 
@@ -118,7 +118,7 @@ whoami
 ```
 ---
 
-### The `date` Command
+#### date
 
 Another really simple one is the `date` command, which, will show you the current date and time.
 
@@ -129,7 +129,7 @@ date
 
 ## File System Navigation
 
-Setup:
+Setup: Run the following command to setup the folder structure to use below.
 
 ```bash
 cd
@@ -150,50 +150,46 @@ Commands to navigate your file system are very important. You will be using them
 | cd ..                               | Change to parent directory                                                        |
 | cd -                                | Change to previous directory (which could be different than the parent of course) |
 
+
 Of course, you can group flags together. For example, if I want to see more info and view hidden files, I could do `ls -l -a` and even shorten it to `ls -la`.
 
 
-## Challenge-1: Find hidden items
+#### Exercise: Find the hidden items
 
-### Finding hidden files and directories in your home folder.
+**Finding hidden files and directories in your home folder.**
 
 First navigate to your `home` directory, if you are not already there. Explore the options for `ls` to find out how to see hidden directories. List the contents of the directory with the option to display all the hidden items there.
 
 <details>
-  <summary markdown='span'>::::::::::::::: Hint</summary>
+  <summary markdown='span'><b>::::Hint::::</b></summary
 
-  
-Hint: hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`. \  
-  
-You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. \ You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
+Hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.  
 
-
+You can open the manual page or help page for the `ls` command and search inside using a keyword: `dot`. You can type `/` followed by your keyword `dot` to search the manual page and you can see what option to use.
 </details>
 
+
+
 <details>
-  <summary markdown='span'>::::::::::::::: solution</summary>
-  
+  <summary markdown='span'><b>::::Solution::::</b></summary>
 
 First, use the `man` command to look at the options for `ls`.
   
-
 ```bash
 man ls
 ```
 
 The `-a` option is short for `all` and says that it causes `ls` to "not ignore entries starting with ." This is the option we want.
 
-
 ```bash
 ls -a
 ```
 
 You will see all the files and folders that were hidden and start with `.`
-  
-
 </details>
 
-## Full vs. Relative Paths
+
+### Full vs. Relative Paths
 
 The `cd` command takes an argument which is a directory name. Directories can be specified using either a *relative* path or a full *absolute* path. The directories on the computer are arranged into a hierarchy. The full path tells you where a directory is in that hierarchy. Navigate to the home directory, then enter the `pwd` command.
 
@@ -204,7 +200,6 @@ pwd
 
 You will see:
 
-
 ```output
 /home/<your_user_name>
 ```
@@ -213,7 +208,7 @@ This is the full name of your home directory. This tells you that you are in a d
 
 ---
 
-To navigate to the `dir_3` directory that you just created before:
+To navigate to the `dir_3` directory that you created before:
 
 ```bash
 cd /Users/<your_user_name>/Desktop/dir_1/dir_2/dir_3/
@@ -234,7 +229,7 @@ You can usually use either a full path or a relative path depending on what is m
 Over time, it will become easier for you to keep a mental note of the structure of the directories that you are using and how to quickly navigate amongst them.
 
 
-## Challenge-2: Relative path resolution
+#### Exercise: Relative path resolution
 
 Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 what will `ls ../backup` display?
@@ -248,7 +243,7 @@ what will `ls ../backup` display?
 ![](fig/filesystem-challenge.svg)
 
 <details>
-  <summary markdown='span'>::::::::::::::: Solution</summary>
+  <summary markdown='span'><b>::::Solution::::</b></summary>
 
 
 1. No: there *is* a directory `backup` in `/Users`.
@@ -294,7 +289,7 @@ cd test2 && mkdir test3
 
 ---
 
-## The `touch` Command
+#### touch
 You can create files using touch command.
 
 ```bash
@@ -303,7 +298,6 @@ touch file-1.txt
 
 you can also create multiple files.
 
-
 ```bash
 touch file-{001..100}.txt
 ```
@@ -311,7 +305,7 @@ touch file-{001..100}.txt
 Now we have 100 .txt files in the current directory. Something that would have taken a lot longer to do in the GUI.
 
 ---
-## The `nano` Command
+#### nano
 
 The `nano` command is a text editor that is installed by default on most Linux distributions, MacOS and you can even use it with Git Bash on Windows. It is very similar to the `vim` editor, but it is much easier to use.
 
@@ -325,7 +319,7 @@ When you're ready to exit, just hit `Ctrl + X` and then `Y` to save and `N` to n
 
 ---
 
-## The `head` and `tail` Commands
+#### head & tail
 
 The `head` command is used to output the first part of files. By default, it outputs the first 10 lines of each file. You can also specify the number of lines to output.
 
@@ -359,7 +353,7 @@ tail -n 5 [filename]
 ```
 ---
 
-## The `less` Command
+#### less
 
 The `less` command is used to view the contents of a file. It is similar to the `cat` command, but it allows you to scroll up and down.
 
@@ -375,11 +369,11 @@ To exit the `less` command, just press `q`.
 
 ---
 
-## The `cat` (concatenate) Command
+#### cat (concatenate)
 
 The cat command is a very common command and allows you to create single or multiple files, view the content of a file, concatenate files, and redirect output in the terminal or files.
 
-The most common thing cat is used for is to display the contents of a file:
+The most common thing `cat` is used for is to display the contents of a file:
 
 ```bash
 cat [filename]
@@ -412,12 +406,12 @@ You can use it to show line numbers:
 cat -n [filename]
 ```
 
-There are other uses of cat command, you can check its manual for more details.
+There are other uses of `cat` command, you can check its manual for more details.
 
 
 ---
 
-## The `echo` Command
+#### echo
 
 The `echo` command is used to display messages or to create and write to files. It is similar to the `cat` command, but it is used to display a single line of text.
 
@@ -438,7 +432,7 @@ echo "Hello World" >> [filename]
 ```
 ---
 
-## The `grep` Command
+#### grep
 
 The `grep` command is used to search for a text pattern in a file. It is very powerful and can be used to search for a string or regular expression in a file or set of files.
 
@@ -456,7 +450,7 @@ grep [searchterm] [filename] [filename]
 
 ---
 
-## The `find` command
+#### find
 
 The `find` command is extremely powerful and is used to find the location of files and directories based on the conditions that you specify.
 
@@ -529,7 +523,7 @@ There is so much more that you can do with the `find` command, but it goes beyon
 
 ---
 
-## The `history` Command
+#### history
 
 Used to display the history of commands that you have run.
 
@@ -663,7 +657,7 @@ Use `ls` to display the output from the above `for` loop.
 
 ---
 
-## 2. Setting up a Scenario-1.
+## 2. Setting up the Scenario-1.
 Suppose you are a Principal Investigator (PI) in your lab, and you have five new graduate students this year: `Allison, Jeff, Sam, Eunji, and Oskar`. You want to set up a folder for each of your students to share files between the two of you. You also want to create a text file, `Meeting_notes.txt` inside each of your students' folders to record your meeting agendas and notes. Create a folder named `students` on your desktop and prepare the file system inside it using a for loop.
 
 Commands you will be using: `mkdir` and `touch`.
@@ -700,6 +694,7 @@ We can use `>` to direct the output from a command to a file. However, redirecti
 </details>
 
 
+**
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
 
@@ -713,7 +708,7 @@ done
 
 ---
 
-## 3. Setting up a Scenario 2:
+## 3. Setting up the Scenario-2:
 
 First, let's create three fasta files with the `touch` command.
 `file_1.fasta`, `file_2.fasta`, `file_3.fasta`
@@ -729,7 +724,7 @@ Now insert the following sequences into each file using the `for` loop. You can 
 >Sequence1\nACGTAGCTAGCTAGCTAGCTAGCTTAGCTAGCTAGAGCTAGCTAGCTGCTAGCT\n>Sequence2\nGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCAGCTAGCTTAGCTAGGCAGCTAGA\n>Sequence3\nTAGCTAGCTAGCTAGCTAGCTATAGCTAGCTAGCTCTAGCTAGCTAGCTGCTGT
 ```
 
-
+**
 <details>
 <summary markdown='span'><b>::::Hints::::</b></summary>
  
@@ -737,7 +732,7 @@ The wild card `*.fasta` can specify all the files that end with .fasta inside th
 </details>   
 
 
-
+**
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
  
@@ -759,7 +754,7 @@ Command you will be using: `grep`
 The `grep` command can be used to search a specified pattern in the specified file. As we know each fasta sequence has a header line and each header starts with a `>` sign. we can use `grep` with `-c` option to count the occurrence of `>` at the start of the line to get the number of sequences.
 </details>
 
-
+**
 <details>
 <summary markdown='span'><b>::::Solution::::</b></summary>
  
