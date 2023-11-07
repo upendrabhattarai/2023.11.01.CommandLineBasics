@@ -162,7 +162,7 @@ First navigate to your `home` directory, if you are not already there. Explore t
 
 ###
 <details>
-<summary markdown='span'><b>:paperclip: Hint:paperclip :</b></summary
+<summary markdown='span'><b>:paperclip: Hint :paperclip:</b></summary
 
 Hidden files and folders in Unix start with `.`, for example: `.my_hidden_directory` or `.my_hidden_file`.  
 
