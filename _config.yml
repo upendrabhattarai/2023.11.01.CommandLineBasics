@@ -1,7 +1,9 @@
 theme: jekyll-theme-minimal
-title: Command Line Basics
+title: Crash Course On Command Line Basics
 description: Upendra Bhattarai <br/>
               2023-11-08
+
+![](https://komarev.com/ghpvc/?username=upendrabhattarai&color=blue)
 
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
